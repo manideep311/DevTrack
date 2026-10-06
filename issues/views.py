@@ -43,7 +43,10 @@ def reporters(request):
 
 
 def create_reporter(request):
-    data = json.loads(request.body)
+    try:
+        data = json.loads(request.body)
+    except json.JSONDecodeError:
+        return error('Invalid JSON body', 400)
     records = read_json(REPORTERS_FILE)
     reporter = Reporter(
         data.get('id', next_id(records)),
@@ -95,7 +98,10 @@ def issues(request):
 
 
 def create_issue(request):
-    data = json.loads(request.body)
+    try:
+        data = json.loads(request.body)
+    except json.JSONDecodeError:
+        return error('Invalid JSON body', 400)
 
     records = read_json(ISSUES_FILE)
     issue_id = data.get('id', next_id(records))
