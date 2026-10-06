@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Login button not working on mobile",
+    "description": "Users on iOS 17 cannot tap the login button",
+    "status": "open",
+    "priority": "critical",
+    "reporter_id": 1
+  },
+  {
+    "id": 2,
+    "title": "Chatbot not responding",
+    "description": "The chatbot is not responding to user queries on the website",
+    "status": "open",
+    "priority": "low",
+    "reporter_id": 1
+  },
+  {
+    "id": 3,
+    "title": "Payment Issue",
+    "description": "payments are not happening",
+    "status": "open",
+    "priority": "critical",
+    "reporter_id": 1
+  },
+  {
+    "id": 4,
+    "title": "Login button not working on mobile",
+    "description": "Users on iOS 17 cannot tap the login button",
+    "status": "in_progress",
+    "priority": "critical",
+    "reporter_id": 2
+  }
+]
